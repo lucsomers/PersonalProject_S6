@@ -1,0 +1,22 @@
+﻿
+// THIS FILE IS NOT THE SAME AS "ocelot.Production.json". PAY ATTENTION TO THE "Host" AND "Port" FIELDS WHEN EDITING THESE FILES. (When using multiple Controllers, make sure to specify the correct SwaggerKey)
+{
+    "Routes": [
+        {
+            "DownstreamPathTemplate": "/User/{everything}",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 4983
+                }
+            ],
+            "UpstreamPathTemplate": "/User/{everything}",
+            "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE", "OPTIONS" ],
+            "SwaggerKey": "User"
+        }
+    ],
+    "GlobalConfiguration": {
+        "BaseUrl": "http://localhost:5000"
+    }
+}
